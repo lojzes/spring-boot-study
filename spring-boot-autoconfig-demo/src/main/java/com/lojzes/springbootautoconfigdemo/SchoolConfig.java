@@ -20,7 +20,6 @@ public class SchoolConfig {
     @Bean
     @ConditionalOnClass({School.class,Teacher.class})
     public School school(){
-        System.out.println("=================school=============================");
         School school = new School();
         school.setAddress(schoolAddress);
         return school;

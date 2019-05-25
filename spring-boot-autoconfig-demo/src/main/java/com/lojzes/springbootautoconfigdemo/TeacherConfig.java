@@ -20,7 +20,6 @@ public class TeacherConfig {
     @Bean
     @ConditionalOnClass(Teacher.class)
     public Teacher teacher(){
-        System.out.println("=================teacher=============================");
         Teacher teacher = new Teacher();
         teacher.setName(teacherName);
         return teacher;

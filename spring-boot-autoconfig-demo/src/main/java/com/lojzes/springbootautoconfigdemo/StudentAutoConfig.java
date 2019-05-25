@@ -26,7 +26,6 @@ public class StudentAutoConfig {
     @Bean
     @ConditionalOnMissingBean
     public Student student(){
-        System.out.println("=================student=============================");
         return new Student(studentProperties.getName());
     }
 }
