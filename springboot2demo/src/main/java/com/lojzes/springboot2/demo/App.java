@@ -1,6 +1,8 @@
 package com.lojzes.springboot2.demo;
 
+import com.lojzes.springbootautoconfigdemo.School;
 import com.lojzes.springbootautoconfigdemo.Student;
+import com.lojzes.springbootautoconfigdemo.Teacher;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -18,9 +20,19 @@ public class App {
 
         ConfigurableApplicationContext run = SpringApplication.run(App.class, args);
 
-        Student bean = run.getBean(Student.class);
+        Student student = run.getBean(Student.class);
 
-        System.out.println("bean = " + bean.getName());
+        System.out.println("student = " + student.getName());
+
+
+        School school = run.getBean(School.class);
+
+        System.out.println("school = " + school.getAddress());
+
+
+        Teacher teacher = run.getBean(Teacher.class);
+
+        System.out.println("teacher = " + teacher.getName());
 
 
     }
