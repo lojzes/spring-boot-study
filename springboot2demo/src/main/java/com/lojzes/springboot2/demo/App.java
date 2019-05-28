@@ -20,19 +20,19 @@ public class App {
 
         ConfigurableApplicationContext run = SpringApplication.run(App.class, args);
 
-        Student student = run.getBean(Student.class);
-
-        System.out.println("student = " + student.getName());
-
-
-        School school = run.getBean(School.class);
-
-        System.out.println("school = " + school.getAddress());
-
-
-        Teacher teacher = run.getBean(Teacher.class);
-
-        System.out.println("teacher = " + teacher.getName());
+//        Student student = run.getBean(Student.class);
+//
+//        System.out.println("student = " + student.getName());
+//
+//
+//        School school = run.getBean(School.class);
+//
+//        System.out.println("school = " + school.getAddress());
+//
+//
+//        Teacher teacher = run.getBean(Teacher.class);
+//
+//        System.out.println("teacher = " + teacher.getName());
 
 
     }
