@@ -1,4 +1,4 @@
-package com.lojzes.springboot2.demo;
+package com.lojzes.springboot2;
 
 import com.lojzes.springbootautoconfigdemo.School;
 import com.lojzes.springbootautoconfigdemo.Student;
